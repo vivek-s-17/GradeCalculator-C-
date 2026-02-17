@@ -38,11 +38,16 @@
                 }
             }
 
-            String[] studentName = new string[numberOfStudents];
+            String[] studentName = new string[numberOfStudents]; // Array to store student names
             for (int j = 0; j < numberOfStudents; j++)
             {
                 Console.Write($"Enter name of student{j + 1}:");
-                studentName[j] = Console.ReadLine().Trim();
+                string? studentname = Console.ReadLine()?.Trim();
+                if (studentname is not null)
+                {
+                    studentName[j] = studentname.Trim(); // Store the student name in the array and remove leading/trailing whitespace
+                }
+                
             }
 
 
@@ -72,6 +77,7 @@
                     }
 
                 }
+
 
                 double totalMarks = 0;
                 for (int k = 0; k < numberOfSubjects; k++)
