@@ -16,4 +16,5 @@ Below 60: "F"
 
 Test with: Student "Alice" with marks 85, 92, 78
 till DEMO5 - we use to do for a single child
+DEMO6 - Can add multiple Students and Subject
 
