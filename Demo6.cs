@@ -28,7 +28,7 @@
             while (!isValid1)
             {
                 Console.WriteLine("Enter the number of Subjects:");
-                if (int.TryParse(Console.ReadLine(), out numberOfSubjects) && numberOfSubjects > -1 && numberOfSubjects < 6)
+                if (int.TryParse(Console.ReadLine(), out numberOfSubjects) && numberOfSubjects > -1 && numberOfSubjects < 6) //validation
                 {
                     isValid1 = true;
                 }
@@ -88,7 +88,7 @@
 
                 double averageMarks = totalMarks / numberOfSubjects;
 
-                char grade = averageMarks switch
+                char grade = averageMarks switch // using switch case which is better than if else 
                 {
                     > 89 and < 101 => 'A',
                     > 79 and < 90 => 'B',
@@ -108,3 +108,4 @@
 
     }
 }
+
